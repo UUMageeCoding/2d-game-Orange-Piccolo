@@ -129,6 +129,84 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +487,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_0': -5086763205056692648
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_1': 5882379528062842583
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_10': 8651198105411139944
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_11': -295153878357626405
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_2': 3217310160653631265
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_3': 1258634445709473011
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_4': -7526250300469756766
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_5': 275472119585311970
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_6': 1518781841318819603
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_7': -3480755802738054041
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_8': -7645210867637793140
+      '[SHOOT WITH CASING] FULL AUTO Submachine - MP5A3_9': -373619597581739235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
