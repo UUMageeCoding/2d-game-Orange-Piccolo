@@ -41,5 +41,29 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 168889309
+    locked: 0
+  - name: Carpet
+    uniqueID: 2855494183
+    locked: 0
+  - name: Collectibles
+    uniqueID: 1398236669
+    locked: 0
+  - name: Bullets
+    uniqueID: 4218062893
+    locked: 0
+  - name: Player
+    uniqueID: 2537004067
+    locked: 0
+  - name: Enemies
+    uniqueID: 418039171
+    locked: 0
+  - name: Walls
+    uniqueID: 1680581961
+    locked: 0
+  - name: Accessories
+    uniqueID: 2179503559
+    locked: 0
   m_RenderingLayers:
   - Default
