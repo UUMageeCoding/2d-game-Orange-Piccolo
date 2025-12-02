@@ -34,4 +34,12 @@ public class PlayerMovement : MonoBehaviour
     {
         _movementInput = inputValue.Get<Vector2>();
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "BreakRoomSceneChange")
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 }
