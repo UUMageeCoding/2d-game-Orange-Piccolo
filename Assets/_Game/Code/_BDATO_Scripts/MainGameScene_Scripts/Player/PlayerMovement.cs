@@ -41,5 +41,10 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+
+        if (other.tag == "MainFloorSceneChange")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
