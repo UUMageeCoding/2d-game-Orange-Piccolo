@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField]
     private float _speed;
-
-    [SerializeField]
-    private float _rotationSpeed;
 
     private Rigidbody2D _rigidbody;
     private PlayerAwarenessController _playerAwarenessController;
@@ -25,7 +23,6 @@ public class EnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateTargetDIrection();
-        RotateTowardsTarget();
         SetVelocity();
     }
 
@@ -39,10 +36,10 @@ public class EnemyMovement : MonoBehaviour
     {
         _changeDirectionCooldown -= Time.deltaTime;
 
-        if (_changeDirectionCooldown <=0)
+        if (_changeDirectionCooldown <= 0)
         {
             float angleChange = Random.Range(-90f, 90f);
-            Quaternion rotation = Quaternion.AngleAxis(angleChange, transform.forward);
+            Quaternion rotation = Quaternion.AngleAxis(angleChange,transform.forward);
             _targetDirection = rotation * _targetDirection;
 
             _changeDirectionCooldown = Random.Range(1f, 5f);
@@ -55,14 +52,6 @@ public class EnemyMovement : MonoBehaviour
         {
             _targetDirection = _playerAwarenessController.DirectionToPlayer;
         }
-    }
-
-    private void RotateTowardsTarget()
-    {
-        Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _targetDirection);
-        Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
-
-        _rigidbody.SetRotation(rotation);
     }
 
     private void SetVelocity()
