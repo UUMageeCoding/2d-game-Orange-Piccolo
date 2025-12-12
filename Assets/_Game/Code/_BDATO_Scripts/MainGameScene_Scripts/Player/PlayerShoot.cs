@@ -44,7 +44,7 @@ public class PlayerShoot : MonoBehaviour
         GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, transform.rotation);
         Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
 
-        rigidbody.linearVelocity = _bulletSpeed * transform.right;
+        rigidbody.linearVelocity = _bulletSpeed * transform.up;
     }
 
     private void OnAttack(InputValue inputValue)
