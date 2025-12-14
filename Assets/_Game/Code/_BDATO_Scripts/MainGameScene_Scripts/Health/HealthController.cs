@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering.Universal;
 
 public class HealthController : MonoBehaviour
 {
     [SerializeField]
-    private float _currentHealth;
+    public float _currentHealth;
 
     [SerializeField]
-    private float _maximumHealth;
+    public float _maximumHealth;
 
     public float RemainingHealthPercentage
     {
