@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Game/Scenes/BadDayAtTheOffice/Main_Menu_Scene.unity
+    guid: 2210e2ca67a33af4bae51d8a8af4ba70
+  - enabled: 1
     path: Assets/_Game/Scenes/BadDayAtTheOffice/Break_Room_Scene.unity
     guid: 60cc17330e5c83f4b904e6fde244ff72
   - enabled: 1

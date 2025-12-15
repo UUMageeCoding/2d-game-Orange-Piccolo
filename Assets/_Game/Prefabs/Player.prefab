@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 7220336939477792755}
   - component: {fileID: 8180240480904534533}
   - component: {fileID: 5458998002965729906}
+  - component: {fileID: 6144482746729110842}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -403,7 +404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acbfc3e44d2ac34a9de49f0d3e65cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invincibilityDuration: 3
+  _invincibilityDuration: 1
+  _flashColor: {r: 1, g: 1, b: 1, a: 0.50980395}
+  _numberOfFlashes: 10
 --- !u!95 &8180240480904534533
 Animator:
   serializedVersion: 7
@@ -453,3 +456,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6144482746729110842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947288381013128771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1c791d664886b4a9228952bd760542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

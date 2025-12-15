@@ -67,14 +67,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "BreakRoomSceneChange")
-        {
-            SceneManager.LoadScene(0);
-        }
-
         if (other.tag == "MainFloorSceneChange")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }
