@@ -7,6 +7,9 @@ public class BDATOGameManager : MonoBehaviour
 {
     [SerializeField]
     private float _timeToWaitBeforeExit;
+
+    [SerializeField]
+    private SceneController _sceneController;
     
     public void OnPlayerDied()
     {
@@ -15,6 +18,6 @@ public class BDATOGameManager : MonoBehaviour
 
     private void EndGame()
     {
-        SceneManager.LoadScene(0);
+        _sceneController.LoadScene("Main_Menu_Scene");
     }
 }

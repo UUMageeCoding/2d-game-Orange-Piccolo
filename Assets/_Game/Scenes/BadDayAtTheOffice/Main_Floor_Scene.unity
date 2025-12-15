@@ -915,6 +915,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthbarForegroundImage: {fileID: 1154694572}
+--- !u!1001 &777779947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4530571561117757277, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_Name
+      value: Scene Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 826.9525
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 295.04105
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593522864700169106, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+--- !u!114 &777779948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8091743934413339823, guid: 253e1a45bdb61e74aa1e0826d3c5cc6c, type: 3}
+  m_PrefabInstance: {fileID: 777779947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490d041263988914b921c9fc523f027d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &794669069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,6 +4506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeToWaitBeforeExit: 3
+  _sceneController: {fileID: 777779948}
 --- !u!1001 &885746589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49499,6 +49568,7 @@ SceneRoots:
   - {fileID: 859306442}
   - {fileID: 6915806768506133944}
   - {fileID: 61772201}
+  - {fileID: 777779947}
   - {fileID: 270722943}
   - {fileID: 18200674}
   - {fileID: 1157673246}

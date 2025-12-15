@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField]
+    private SceneController _sceneController;
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        _sceneController.LoadScene("Break_Room_Scene");
     }
 
     public void Exit()
