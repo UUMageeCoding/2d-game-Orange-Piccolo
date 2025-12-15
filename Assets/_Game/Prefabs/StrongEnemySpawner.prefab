@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 5448206480051120822, guid: e82699cea5c421b49928c0db95582922, type: 3}
     - target: {fileID: 1916064568062192469, guid: 2f9f9c5c6de6fd3448b16035a11d7385, type: 3}
       propertyPath: _maximumSpawnTime
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1916064568062192469, guid: 2f9f9c5c6de6fd3448b16035a11d7385, type: 3}
       propertyPath: _minimumSpawnTime
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2658458022475811561, guid: 2f9f9c5c6de6fd3448b16035a11d7385, type: 3}
       propertyPath: m_LocalPosition.x
