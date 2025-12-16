@@ -7,6 +7,7 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField]
     private float _damageAmount;
 
+    // Calls the Health Controller to remove health from the player upon collision
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerMovement>())

@@ -22,6 +22,7 @@ public class HealthController : MonoBehaviour
 
     public bool IsInvincible { get; set; }
 
+    // Different events for changes to health to allow for specific actions to occur such as losing collision upon death
     public UnityEvent OnDied;
 
     public UnityEvent OnDamaged;
@@ -30,6 +31,7 @@ public class HealthController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
+        // Prevents damage being dealt if they are dead or during their invincibility frames
         if (_currentHealth == 0)
         {
             return;
@@ -49,6 +51,7 @@ public class HealthController : MonoBehaviour
             _currentHealth = 0;
         }
 
+        // Invokes the appropriate event for dying or receiving damage based on current health
         if (_currentHealth == 0)
         {
             OnDied.Invoke();
@@ -70,6 +73,7 @@ public class HealthController : MonoBehaviour
 
         OnHealthChanged.Invoke();
 
+        // Prevents more health being added than the maximum
         if (_currentHealth > _maximumHealth)
         {
             _currentHealth = _maximumHealth;

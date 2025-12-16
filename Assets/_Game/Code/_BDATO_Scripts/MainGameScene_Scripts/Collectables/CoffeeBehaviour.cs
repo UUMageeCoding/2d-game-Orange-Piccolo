@@ -5,6 +5,7 @@ using UnityEngine;
 public class CoffeeBehaviour : MonoBehaviour, ICollectableBehaviour
 {
     [SerializeField]
+    // Allows assignment of health restored by Coffee item in Inspector
     private float _healthAmount;
     public void OnCollected(GameObject Player)
     {

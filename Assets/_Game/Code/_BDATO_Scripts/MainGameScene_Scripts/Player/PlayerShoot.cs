@@ -20,9 +20,7 @@ public class PlayerShoot : MonoBehaviour
     private bool _fireContinuously;
     private bool _fireSingle;
     private float _lastFireTime;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    // Update is called once per frame
     void Update()
     {
         if (_fireContinuously || _fireSingle)
@@ -31,6 +29,7 @@ public class PlayerShoot : MonoBehaviour
 
             if (timeSinceLastFire >= _timeBetweenShots)
             {
+                // Allows the player to shoot whenever the time since the last shot is greater than the time between shots
                 FireBullet();
 
             _lastFireTime = Time.time;
@@ -41,6 +40,7 @@ public class PlayerShoot : MonoBehaviour
 
     private void FireBullet()
     {
+        // Instantiates the bullet prefab and sets its velocity
         GameObject bullet = Instantiate(_bulletPrefab, _gunOffset.position, transform.rotation);
         Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
 

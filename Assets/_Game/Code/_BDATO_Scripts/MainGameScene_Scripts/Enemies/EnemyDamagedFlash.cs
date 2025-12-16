@@ -17,6 +17,7 @@ public class EnemyDamagedFlash : MonoBehaviour
 
     private void Awake()
     {
+        // Gets reference to the Sprite Flash script
         _spriteFlash = GetComponent<SpriteFlash>();
     }
 

@@ -20,6 +20,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.GetComponent<EnemyMovement>())
         {
+            // Damages enemies upon collision via targeting their movement script then destroys the bullet
             HealthController healthController = collision.GetComponent<HealthController>();
             healthController.TakeDamage(100);
             Destroy(gameObject);
@@ -30,6 +31,7 @@ public class Bullet : MonoBehaviour
     {
         Vector2 screenPosition = _camera.WorldToScreenPoint(transform.position);
 
+        // Destroys the bullet object when it leaves the boundaries of the camera
         if (screenPosition.x < 0 ||
         screenPosition.x > _camera.pixelWidth ||
         screenPosition.y < 0 ||

@@ -16,12 +16,14 @@ public class EnemyMovement : MonoBehaviour
 
     private void Awake()
     {
+        // References the enemy's rigid body and the awareness controller
         _rigidbody = GetComponent<Rigidbody2D>();
         _playerAwarenessController = GetComponent<PlayerAwarenessController>();
     }
 
     private void FixedUpdate()
     {
+        // Rotates and begins moving towards the target if the enemy detects the player
         UpdateTargetDirection();
         RotateTowardsTarget();
         SetVelocity();
@@ -31,10 +33,12 @@ public class EnemyMovement : MonoBehaviour
     {
         if (_playerAwarenessController.AwareOfPlayer)
         {
+            // If the enemy detects the player, it sets their target direction to the player's position
             _targetDirection = _playerAwarenessController.DirectionToPlayer;
         }
         else
         {
+            // Stops moving towards a fixed location if the player is no longer detected
             _targetDirection = Vector2.zero;
         }
     }
@@ -46,6 +50,7 @@ public class EnemyMovement : MonoBehaviour
             return;
         }
 
+        // Allows for the enemy to rotate smoothly to the target location
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _targetDirection);
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
 

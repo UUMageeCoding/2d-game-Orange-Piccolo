@@ -13,10 +13,11 @@ public class PlayerAwarenessController : MonoBehaviour
     
     private void Awake()
     {
+        // Finds the player position by locating the Player Movement script on the player game object
         _player = FindFirstObjectByType<PlayerMovement>().transform;
     }
 
-    // Update is called once per frame
+    // Ensures the enemy is aware of the player when they are within range
     void Update()
     {
         Vector2 enemyToPlayerVector = _player.position - transform.position;

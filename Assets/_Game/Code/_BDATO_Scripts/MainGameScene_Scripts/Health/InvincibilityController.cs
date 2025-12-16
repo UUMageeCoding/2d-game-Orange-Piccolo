@@ -9,6 +9,7 @@ public class InvincibilityController : MonoBehaviour
 
     private void Awake()
     {
+        // References the Health Controller and Sprite Flash scripts
         _healthController = GetComponent<HealthController>();
         _spriteFlash = GetComponent<SpriteFlash>();
     }

@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void SetAnimation()
     {
+        // Allows the movement animation to play when the player is moving
         bool isMoving = _movementInput != Vector2.zero;
 
         _animator.SetBool("IsMoving", isMoving);
@@ -53,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_movementInput != Vector2.zero)
         {
+            // Allows for the player to rotate and turn based on their current movement direction
             Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _smoothedMovementInput);
             Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
 
@@ -67,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Allows for the player to enter the main game scene from the Break Room scene
         if (other.tag == "MainFloorSceneChange")
         {
             SceneManager.LoadScene(2);
